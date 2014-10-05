@@ -6,7 +6,7 @@ A program which graphically displays network traffic in the local network.
 
 Description:
 ==================
-network-visualizer captures IP packages with pcap and displays them graphically.
+network-visualizer captures IPv4 packages with pcap and displays them graphically.
 
 network-visualizer displays 3 kinds of sources/destinations of packets (displayed as big cubes):
 * External: Addresses not from the local subnet are treatet as external
