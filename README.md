@@ -9,7 +9,7 @@ A program which graphically displays network traffic in the local network.
 network-visualizer captures IPv4 packages with pcap and displays them graphically.
 
 network-visualizer displays 3 kinds of sources/destinations of packets (displayed as big cubes):
-* External: Addresses not from the local subnet are treatet as external
+* External: Addresses not from the local subnet are treated as external
 * Local: Packets which are addressed as multicast or to addresses in the local subnet of which the program isn't sure if they exist are sent here
 * Network Entities: Addresses in the local subnet of which the program knows that they exist. It knows, once a IP package from this address is captured.
 
