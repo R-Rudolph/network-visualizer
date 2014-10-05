@@ -43,7 +43,7 @@ In order to compile make and g++ are needed, as well as the libraries mentioned 
 
 Compile network-visualizer by executing
 
-make
+    make
 
 This will generate the binary named network-visualizer.
 
