@@ -34,18 +34,22 @@ Ctrl+C: Exit
 Libraries:
 ==================
 The libraries used are:
+* libpcap
+* libGL
+* libglut (freeglut)
+* libGLEW
+* libSOIL
+* pthread
 
-libpcap
 
-libGL
+How to compile/dependencies:
+==================
+In order to compile make and g++ are needed, as well as the libraries mentioned above.
 
-libglut (freeglut)
+Compile network-visualizer by executing
 
-libGLEW
+make
 
-libSOIL
-
-pthread
-
+This will generate the binary named network-visualizer.
 
 
