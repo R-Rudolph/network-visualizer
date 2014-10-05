@@ -45,7 +45,11 @@ Compile network-visualizer by executing
 
     make
 
-This will generate the binary named network-visualizer. network-visualizer needs priviledged network access, it has to be executed either priviledged
+This will generate the binary named network-visualizer.
+
+### How to run
+
+network-visualizer needs priviledged network access, it has to be executed either priviledged
 
     sudo ./network-visualizer
 
