@@ -4,6 +4,7 @@ OUTPUT=network-visualizer
 
 all:
 	g++ $(SFILES) -o $(OUTPUT) $(LIBRARIES) -std=gnu++11
+	sudo setcap cap_net_raw+ep network-visualizer
 run:
 	make
-	sudo ./$(OUTPUT)
+	./network-visualizer

@@ -10,7 +10,7 @@
 #include "NetworkEntities.hpp"
 #include "MovingCube.hpp"
 
-#define SNAP_LEN 1518
+#define SNIFFER_SNAP_LEN 20000
 #define SIZE_ETHERNET 14
 
 /* IP header */

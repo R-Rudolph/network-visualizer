@@ -59,7 +59,6 @@ MovingCube::MovingCube(int dir,Attribute* coord, Attribute* texcoord, Attribute*
   graphic->att_position=att_position;
   graphic->att_color=att_color;
   graphic->att_scale=att_scale;
-
   const struct ip_header* hdr=(const struct ip_header*) (content+14);
   NetworkEntity* src = addNetworkEntity(hdr->ip_src);
   destination_netent = getNetworkEntity(hdr->ip_dst);
@@ -272,7 +271,7 @@ void init_MovingCubes()
 
   cubes_M_att_coord=new Attribute_vbo(*new VertexBufferObject(coords,3,sizeof(coords)),"coord3d",*simpleProgram);
   cubes_M_att_texcoord=new Attribute_vbo(*new VertexBufferObject(texcoords,2,sizeof(texcoords)),"tex_coord",*simpleProgram);
-  cubes_M_att_texture=new Attribute_texture(*new Texture("./data/ip.png"), GL_TEXTURE0, "texture", *simpleProgram);
+  cubes_M_att_texture=new Attribute_texture(*new Texture(NETWORK_VISUALIZER_RESSOURCE_PATH "ip.png"), GL_TEXTURE0, "texture", *simpleProgram);
   cubes_M_elems = new glElement(elems,sizeof(elems));
   cubes_M_att_coord->enable();
   cubes_M_att_texcoord->enable();

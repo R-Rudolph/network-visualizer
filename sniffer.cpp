@@ -118,7 +118,7 @@ void sniffer_start()
   defineNetwork(net,mask);
 
   //open capture divice
-  handle = pcap_open_live(dev, SNAP_LEN, 1, 300, errbuf);
+  handle = pcap_open_live(dev, SNIFFER_SNAP_LEN, 1, 300, errbuf);
   if (handle == NULL)
   {
     fprintf(stderr, "Couldn't open device %s: %s\n", dev, errbuf);

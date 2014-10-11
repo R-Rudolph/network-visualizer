@@ -1,0 +1,7 @@
+#ifndef __RESSOURCES_HPP_INCLUDED__
+#define __RESSOURCES_HPP_INCLUDED__
+
+#define NETWORK_VISUALIZER_RESSOURCE_PATH "./data/"
+
+#endif
+
