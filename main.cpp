@@ -84,8 +84,8 @@ void updateCam()
 
 int init_resources()
 {
-  simpleVS= new Shader("shader/simple.vs.c",GL_VERTEX_SHADER);
-  simpleFS= new Shader("shader/simple.fs.c",GL_FRAGMENT_SHADER);
+  simpleVS= new Shader(NETWORK_VISUALIZER_RESSOURCE_PATH "shader/simple.vs.c",GL_VERTEX_SHADER);
+  simpleFS= new Shader(NETWORK_VISUALIZER_RESSOURCE_PATH "shader/simple.fs.c",GL_FRAGMENT_SHADER);
   simpleProgram = new SProgram(*simpleVS,*simpleFS);
   uniform_proj=uniform_init("proj",*simpleProgram);
   uniform_pos=uniform_init("obj_pos",*simpleProgram);

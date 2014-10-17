@@ -6,7 +6,7 @@
 #include "sniffer.hpp"
 #include "gframework/graphicsframework.hpp"
 #include "NetworkEntities.hpp"
-#include "Ressources.hpp"
+#include "resources.hpp"
 
 class MovingCube
 {

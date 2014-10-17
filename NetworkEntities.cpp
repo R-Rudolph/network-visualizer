@@ -237,9 +237,9 @@ void networkEntityLoadData()
     };
   netent_M_att_coord=new Attribute_vbo(*new VertexBufferObject(coords,3,sizeof(coords)),"coord3d",*simpleProgram);
   netent_M_att_texcoord=new Attribute_vbo(*new VertexBufferObject(texcoords,2,sizeof(texcoords)),"tex_coord",*simpleProgram);
-  netent_M_att_texture=new Attribute_texture(*new Texture(NETWORK_VISUALIZER_RESSOURCE_PATH "netentitity.png"), GL_TEXTURE0, "texture", *simpleProgram);
-  netent_M_att_texture_sink=new Attribute_texture(*new Texture(NETWORK_VISUALIZER_RESSOURCE_PATH "local.png"), GL_TEXTURE0, "texture", *simpleProgram);
-  netent_M_att_texture_external=new Attribute_texture(*new Texture(NETWORK_VISUALIZER_RESSOURCE_PATH "external.png"), GL_TEXTURE0, "texture", *simpleProgram);
+  netent_M_att_texture=new Attribute_texture(*new Texture(NETWORK_VISUALIZER_RESSOURCE_PATH "textures/netentitity.png"), GL_TEXTURE0, "texture", *simpleProgram);
+  netent_M_att_texture_sink=new Attribute_texture(*new Texture(NETWORK_VISUALIZER_RESSOURCE_PATH "textures/local.png"), GL_TEXTURE0, "texture", *simpleProgram);
+  netent_M_att_texture_external=new Attribute_texture(*new Texture(NETWORK_VISUALIZER_RESSOURCE_PATH "textures/external.png"), GL_TEXTURE0, "texture", *simpleProgram);
   netent_M_elems = new glElement(elems,sizeof(elems));
 }
 

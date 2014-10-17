@@ -7,7 +7,7 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>	
 #include "gframework/graphicsframework.hpp"
-#include "Ressources.hpp"
+#include "resources.hpp"
 
 class NetworkEntity
 {

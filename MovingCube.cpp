@@ -271,7 +271,7 @@ void init_MovingCubes()
 
   cubes_M_att_coord=new Attribute_vbo(*new VertexBufferObject(coords,3,sizeof(coords)),"coord3d",*simpleProgram);
   cubes_M_att_texcoord=new Attribute_vbo(*new VertexBufferObject(texcoords,2,sizeof(texcoords)),"tex_coord",*simpleProgram);
-  cubes_M_att_texture=new Attribute_texture(*new Texture(NETWORK_VISUALIZER_RESSOURCE_PATH "ip.png"), GL_TEXTURE0, "texture", *simpleProgram);
+  cubes_M_att_texture=new Attribute_texture(*new Texture(NETWORK_VISUALIZER_RESSOURCE_PATH "textures/ip.png"), GL_TEXTURE0, "texture", *simpleProgram);
   cubes_M_elems = new glElement(elems,sizeof(elems));
   cubes_M_att_coord->enable();
   cubes_M_att_texcoord->enable();
