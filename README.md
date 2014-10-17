@@ -34,6 +34,7 @@ The libraries used are:
 * libglut (freeglut)
 * libGLEW
 * libSOIL
+* glm
 * pthread
 
 
