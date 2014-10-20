@@ -1,8 +1,0 @@
-[Desktop Entry]
-Type=Application
-Version=1.0
-Name=Network Visualizer
-Comment=Display network traffic in 3D
-Exec=network-visualizer
-Terminal=false
-Categories=System;Monitor;

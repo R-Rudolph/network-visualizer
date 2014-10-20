@@ -1,6 +1,0 @@
-post_install() {
-	setcap cap_net_raw+ep /usr/bin/network-visualizer
-}
-post_upgrade() {
-	setcap cap_net_raw+ep /usr/bin/network-visualizer
-}

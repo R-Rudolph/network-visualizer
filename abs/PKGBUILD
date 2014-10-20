@@ -18,44 +18,31 @@ install=network-visualizer.install
 source=("nv::git+https://github.com/R-Rudolph/network-visualizer.git" "network-visualizer.desktop")
 noextract=()
 md5sums=('SKIP'
-         '2820d1e7679668a24dc71e97419330ff') #generate with 'makepkg -g'
-
-
-
-
+'2820d1e7679668a24dc71e97419330ff') #generate with 'makepkg -g'
 pkgver() {
-  cd "$srcdir/nv"
-  git describe --long | sed -E 's/([^-]*-g)/r\1/;s/-/./g'
+cd "$srcdir/nv"
+git describe --long | sed -E 's/([^-]*-g)/r\1/;s/-/./g'
 }
-
 prepare() {
-  cd "$srcdir/nv"
-  sed -i  '/.*#define\sNETWORK_VISUALIZER_RESSOURCE_PATH/c\#define NETWORK_VISUALIZER_RESSOURCE_PATH "/usr/share/network-visualizer/"' resources.hpp
+cd "$srcdir/nv"
+sed -i '/.*#define\sNETWORK_VISUALIZER_RESSOURCE_PATH/c\#define NETWORK_VISUALIZER_RESSOURCE_PATH "/usr/share/network-visualizer/"' resources.hpp
 }
-
 build() {
-  cd "$srcdir/nv"
-  make
+cd "$srcdir/nv"
+make
 }
-
 package() {
-
-  #desktop icon
-  mkdir -p "$pkgdir/usr/share/applications" 
-  cp "$srcdir/network-visualizer.desktop" "$pkgdir/usr/share/applications" 
-  
-  #program data
-  cd "$srcdir/nv"
-  mkdir -p "$pkgdir/usr/bin"
-  mkdir -p "$pkgdir/usr/share/network-visualizer" 
-  cp -r data/* "$pkgdir/usr/share/network-visualizer" 
-  
-  cp "network-visualizer" "$pkgdir/usr/bin/"
-  
-  #doc
-  mkdir -p "$pkgdir/usr/share/doc/network-visualizer/" 
-  cp README.md "$pkgdir/usr/share/doc/network-visualizer"  #README  
-  
+#desktop icon
+mkdir -p "$pkgdir/usr/share/applications"
+cp "$srcdir/network-visualizer.desktop" "$pkgdir/usr/share/applications"
+#program data
+cd "$srcdir/nv"
+mkdir -p "$pkgdir/usr/bin"
+mkdir -p "$pkgdir/usr/share/network-visualizer"
+cp -r data/* "$pkgdir/usr/share/network-visualizer"
+cp "network-visualizer" "$pkgdir/usr/bin/"
+#doc
+mkdir -p "$pkgdir/usr/share/doc/network-visualizer/"
+cp README.md "$pkgdir/usr/share/doc/network-visualizer" #README
 }
-
 # vim:set ts=2 sw=2 et:
