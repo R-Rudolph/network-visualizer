@@ -82,7 +82,14 @@ void got_packet(u_char *args, const struct pcap_pkthdr *header, const u_char *pa
 void* sniffer_start_thread(void* arg)
 {
   while(1)
+  {
+    if(g_stop_updating)
+    {
+      usleep(10000);
+      continue;
+    }
     pcap_loop(handle, 0, got_packet, NULL);
+  }
   pcap_freecode(&fp);
   pcap_close(handle);
   return NULL;

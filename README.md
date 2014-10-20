@@ -18,12 +18,13 @@ Captured packages are displayed as smaller cubes (size dependent on packet size)
 
 ### Controls:
 
-* Left click on packet:  Stop package (only visually, it will of course not stop actual network packages ;) )
+* Left click on packet:  Stop packet (only visually, it will of course not stop actual network packages ;) )
 * Right click on packet: Display information on packet (on console)
 * W, A, S, D: Move camera
 * Q, E, 8, 4, 6, 2: Rotate Camera
 * I: Print camera information
 * Ctrl+C: Exit
+* Space: Pause (will stop packets from moving, also stops sniffing while paused)
 
 
 ### Libraries:

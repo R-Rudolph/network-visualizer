@@ -132,6 +132,11 @@ void* updateNetworkPackages(void* arg)
   {
     int update_passedtime=glutGet(GLUT_ELAPSED_TIME)-update_lasttime;
     update_lasttime=glutGet(GLUT_ELAPSED_TIME);
+    if(g_stop_updating)
+    {
+      usleep(10000);
+      continue;
+    }
     std::vector<MovingCube*>::iterator it;
 
 

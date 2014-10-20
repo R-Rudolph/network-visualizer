@@ -10,6 +10,7 @@ extern GLint uniform_proj, uniform_pos, uniform_col, uniform_scale;
 extern Shader* simpleVS;
 extern Shader* simpleFS;
 extern SProgram* simpleProgram;
+extern unsigned char g_stop_updating;
 
 #endif
 

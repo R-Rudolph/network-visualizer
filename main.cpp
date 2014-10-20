@@ -184,6 +184,8 @@ void pressKey(unsigned char key, int x, int y)
   //quit on Ctrl+C
   if((key==3)&&(mod&2))
     exit(0);
+  if(key==' ')
+    g_stop_updating^=1;
   //print info on i
   if(key=='i')
   {
